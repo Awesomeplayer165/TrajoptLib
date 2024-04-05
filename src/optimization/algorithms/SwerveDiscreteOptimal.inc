@@ -43,7 +43,7 @@ SwerveDiscreteOptimal<Expr, Opti>::SwerveDiscreteOptimal(
 
     auto now = std::chrono::steady_clock::now();
     // 15 FPS limit on sending updates
-    if (now - lastFrameTime < 16ms) {
+    if (now - lastFrameTime < 8ms) {
       return;
     }
 
